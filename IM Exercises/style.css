@@ -1,6 +1,6 @@
 body {
     background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
  }
  
@@ -103,6 +103,14 @@ h3 {
    margin-top: 100px;
 }
 
+.blog-description {
+   font-size: 25px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+ 
+
 .week-entry {
    display: flex;
    flex-wrap: wrap;
@@ -116,7 +124,7 @@ h3 {
 .week-title {
    font-size: 60px;
    position: relative;
-   top: 400px;
+   top: 450px;
    margin-bottom: 50px;
    margin-left: 0px;
    margin-right: 0px;
