@@ -3,6 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
  }
+ @media screen and (max-width: 1200px) {
+   /* Add your CSS styles for screens less than or equal to 1200px wide */
+ }
+ 
  
  header {
     position: relative;
