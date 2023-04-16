@@ -86,7 +86,7 @@ h2 {
 
 h3 {
     font-size: 32px; /* Set the same font size as h1 */
-    margin-left:10px; /* Add some space between the texts */
+    margin-left: 20px; /* Add some space between the texts */
     position: relative; /* Add this line to enable relative positioning */
     top: -65px; /* Add a negative value to move the text up */
 }
