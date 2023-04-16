@@ -339,3 +339,10 @@ h3 {
    margin-right: 0px;
    text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
 }
+
+#wireframes{
+   height: auto;
+   width: 800px;
+   margin-bottom: 50px;
+   
+}
