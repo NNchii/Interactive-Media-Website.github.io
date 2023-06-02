@@ -35,24 +35,41 @@
     <div class="container">
         <h1 class="design-page-title">Design Section</h1>
         <div class="design-description">Here I'll explain the design details of my website.</div>
+        <nav class="week-navigation">
+            <ul>
+                <li><a href="#original-wireframes">Original Wireframes</a></li>
+                <li><a href="#ixd-process">IxD Process</a></li>
+                <li><a href="#wireframes-section">Wireframes</a></li>
+            </ul>
+        </nav>
         <div class="design-content">
-            <div class="design-entry">
+            <div class="design-entry" id="original-wireframes">
                 <h2 class="design-title">Original<br>Wireframes</br></h2>
                 <div class="design-text">
-                    <img src="./Images/HomePageOriginal.png" id="wireframes">
-
-                    <img src="./Images/BlogPageOriginal.png" id="wireframes">
-
-                    <img src="./Images/DesignPageOriginal.png" id="wireframes">
-
-                    <img src="./Images/EssayPageOriginal.png" id="wireframes">
-
-                    <img src="./Images/ProfilePageOriginal.png" id="wireframes">
-
-                    <img src="./Images/PortfolioPageOriginal.png" id="wireframes">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <img src="./Images/HomePageOriginal.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./Images/BlogPageOriginal.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./Images/DesignPageOriginal.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./Images/EssayPageOriginal.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./Images/ProfilePageOriginal.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./Images/PortfolioPageOriginal.png" style="width:100%">
+                        </div>
+                    </div>
                 </div>
+            <div class="design-entry" id="ixd-process">
                 <h2 class="design-title">IxD<br>Process</br></h2>
-                <div class="design-text">
+                <div class="design-text" id="goal alignment">
                     <p id="section-title"><strong>Goal Alignment</strong></p>
 
                     <p id="sub-section-title"><strong>My Goals:</strong></p>
@@ -172,6 +189,8 @@
 
                     <img src="./Images/PortfolioPageWireframe.png" id="wireframes">
                 </div>
+            </div>
+            <div class="design-entry" id="wireframes-section">
                 <h2 class="design-title">Wireframes</h2>
                 <div class="design-text">
                     <img src="./Images/HomePageFinal.png" id="wireframes">
@@ -269,11 +288,13 @@
                     <p id="design-content-text">
                         2. The section where my portfolio work will be displayed.
                     </p>
-
                 </div>
+            </div>
             </div>
             <!-- Other blog content (e.g., Week 2, Week 3) -->
         </div>
     </div>
+    <button id="back-to-top-btn">Back to Top</button>
+<script src="functions.js"></script>
 </body>
 </html>
