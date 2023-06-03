@@ -1,4 +1,5 @@
 body {
+   padding-top: 150px;
     background-color: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -27,6 +28,14 @@ body {
     transform: translateY(-50%);
     right: 100px;
  }
+
+ #header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   transition: top 0.3s;
+   z-index: 100;
+ }
  
  ul {
     list-style: none;
@@ -49,8 +58,8 @@ body {
  a {
     color: #000;
     text-decoration: none;
- }
- 
+}
+
  .tab-line {
     position: absolute;
     bottom: 0;
@@ -61,10 +70,11 @@ body {
  }
  
  .header-text {
-    position: absolute;
-    top: 50%;
-    left: 350px;
-    transform: translateY(100%);
+   position: absolute;
+   top: 250%;
+   left: 350px;
+   transform: translateY(100%);
+   animation: slideInFromLeft 1s forwards;
 }
 
 .header-content {
@@ -72,9 +82,48 @@ body {
     align-items: flex-end; /* Add this line to align both texts vertically */
 }
 
+.header-content h3 {
+   animation: slideInFromRight 1s forwards;
+}
+
+
+@keyframes slideInFromLeft {
+   0% {
+     opacity: 0;
+     transform: translateX(-100%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+
+ @keyframes slideInFromRight {
+   0% {
+     opacity: 0;
+     transform: translateX(100%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+
+ @keyframes slideInFromBottom {
+   0% {
+     opacity: 0;
+     transform: translateY(100%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
 h1 {
     font-size: 32px;
     margin-bottom: 5px;
+    
 }
 
 h2 {
@@ -90,17 +139,28 @@ h3 {
     position: relative; /* Add this line to enable relative positioning */
     top: -65px; /* Add a negative value to move the text up */
 }
+
+.navText {
+   transition: transform 0.3s ease-in-out;
+}
+
+.navText:hover {
+   transform: scale(1.1);
+   border-radius: 10px;
+}
  
  .container {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 30px;
     margin-top: 50px;
+    
  }
  
  .main-section {
     margin-top: 450px;
     text-align: left;
+    animation: slideInFromBottom 3s forwards;
  }
  
  p {
@@ -190,6 +250,7 @@ h3 {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   
 }
 
 .faint-line {
@@ -263,6 +324,31 @@ h3 {
    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a faint underline */
 }
 
+.ixd-title {
+   margin-bottom: 50px; /* Adjust as needed */
+ } 
+
+.sub-navigation {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   margin-left: -20%;
+   position: relative;
+   bottom: -620px;
+ }
+ 
+ .sub-navigation li {
+   margin-bottom: 10px; /* Adjust as needed */
+   margin-left: 0;
+   padding-left: 0;
+ }
+ 
+ .sub-navigation a {
+   color: #000;
+   text-decoration: none;
+ }
+
 #section-title{
    font-size: 40px;
    margin-left: -20;
@@ -287,7 +373,7 @@ h3 {
 #blog-sub-title{
    font-size: 30px;
    margin-bottom: 40px;
-   margin-top: 40px;
+   margin-top: 0px;
 }
 
 .profile-content-title{
@@ -295,12 +381,20 @@ h3 {
    margin-top: 200px;
 }
 
-#profile-picture{
+.profile-picture-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#profile-picture {
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    height: auto;
    width: 250px;
-   display: block;
-   margin: auto;
-   margin-top: 500px;
 }
 
 .profile-title{
@@ -362,6 +456,10 @@ h3 {
    margin-left: -20px;
    font-size: 30px;
    margin-top: -50px;
+}
+
+.portfolio-link:hover{
+   transform: scale(1.1);
 }
 
 .essay-title{
@@ -460,11 +558,3 @@ h3 {
 .prev:hover, .next:hover {
    background-color: rgba(0,0,0,0.8);
 }
- 
- 
- 
- 
- 
- 
- 
- 

@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
     
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="Logo">
             <a href="index.html">
                 <img src="./Images/Weblogo.png" id="web-logo">
@@ -23,11 +24,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="essay.html">Essay</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li class="navText"><a href="index.html">Home</a></li>
+                <li class="navText"><a href="blog.html">Blogs</a></li>
+                <li class="navText"><a href="design.html">Design</a></li>
+                <li class="navText"><a href="essay.html">Essay</a></li>
+                <li class="navText"><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
@@ -37,9 +38,9 @@
         <div class="design-description">Here I'll explain the design details of my website.</div>
         <nav class="week-navigation">
             <ul>
-                <li><a href="#original-wireframes">Original Wireframes</a></li>
-                <li><a href="#ixd-process">IxD Process</a></li>
-                <li><a href="#wireframes-section">Wireframes</a></li>
+                <li class="navText"><a href="#original-wireframes">Original Wireframes</a></li>
+                <li class="navText"><a href="#ixd-process">IxD Process</a></li>
+                <li class="navText"><a href="#wireframes-section">Wireframes</a></li>
             </ul>
         </nav>
         <div class="design-content">
@@ -48,30 +49,51 @@
                 <div class="design-text">
                     <div class="slideshow-container">
                             <div class="mySlides1">
-                                <img src="./Images/HomePageOriginal.png" style="width:100%">
+                                <a href="./Images/HomePageOriginal.png" target="_blank">
+                                    <img src="./Images/HomePageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <div class="mySlides1">
-                                <img src="./Images/BlogPageOriginal.png" style="width:100%">
+                                <a href="./Images/BlogPageOriginal.png" target="_blank">
+                                    <img src="./Images/BlogPageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <div class="mySlides1">
-                                <img src="./Images/DesignPageOriginal.png" style="width:100%">
+                                <a href="./Images/DesignPageOriginal.png" target="_blank">
+                                    <img src="./Images/DesignPageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <div class="mySlides1">
-                                <img src="./Images/EssayPageOriginal.png" style="width:100%">
+                                <a href="./Images/EssayPageOriginal.png" target="_blank">
+                                    <img src="./Images/EssayPageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <div class="mySlides1">
-                                <img src="./Images/ProfilePageOriginal.png" style="width:100%">
+                                <a href="./Images/ProfilePageOriginal.png" target="_blank">
+                                    <img src="./Images/ProfilePageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <div class="mySlides1">
-                                <img src="./Images/PortfolioPageOriginal.png" style="width:100%">
+                                <a href="./Images/PortfolioPageOriginal.png" target="_blank">
+                                    <img src="./Images/PortfolioPageOriginal.png" style="width:100%">
+                                </a>
                             </div>
                             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides1(1)">&#10095;</a>
                     </div>
                 </div>
             <div class="design-entry" id="ixd-process">
-                <h2 class="design-title">IxD<br>Process</br></h2>
-                <div class="design-text" id="goal alignment">
+                    <h2 class="design-title">IxD<br>Process</br></h2>
+                    <ul class="sub-navigation">
+                        <li class="navText"><a href="#goal-alignment">Goal Alignment</a></li>
+                        <li class="navText"><a href="#information-structure">Information Structure</a></li>
+                        <li class="navText"><a href="#user-flow">User Flow</a></li>
+                        <li class="navText"><a href="#style-process">Style Process</a></li>
+                        <li class="navText"><a href="#style-guide">Style Guide</a></li>
+                        <li class="navText"><a href="#final-design-sketches">Final Design Sketches</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                <div class="design-text" id="goal-alignment">
                     <p id="section-title"><strong>Goal Alignment</strong></p>
 
                     <p id="sub-section-title"><strong>My Goals:</strong></p>
@@ -89,7 +111,7 @@
                         My content I hope to showcase on this website is the design processes of my work, the detailed explanations for the decisions I’ve made and design elements I have implemented as well as a step by step documentation of my personal growth as a web developer from my time during this course.
                     </p>
                 </div>
-                <div class="design-text">
+                <div class="design-text" id="information-structure">
                     <p id="section-title"><strong>Information Structure</strong></p>
 
                     <p>
@@ -101,7 +123,7 @@
                     </p>
                     
                 </div>
-                <div class="design-text">
+                <div class="design-text" id="user-flow">
                     <p id="section-title"><strong>User Flow</strong></p>
                     
                     <img src="./Images/User Flow Chart.png" id="wireframes">
@@ -115,7 +137,7 @@
                     </p>
                     
                 </div>
-                <div class="design-text">
+                <div class="design-text" id="style-process">
                     <p id="section-title"><strong>Style Process</strong></p>
                     
                     <p id="sub-section-title"><strong>Notes on Visual aesthetic:</strong></p>
@@ -140,7 +162,7 @@
                     <p id="sub-section-title"><strong>Broad Design Sketches:</strong></p>
                 </div>
 
-                <div class="design-text">
+                <div class="design-text" id="style-guide">
                     <p id="section-title"><strong>Style Guide</strong></p>
                     
                     <p id="sub-section-title"><strong>Goal and Aesthetic:</strong></p>
@@ -179,24 +201,36 @@
                     </p>
                     
                     <p id="sub-section-title"><strong>Final Design Sketches</strong></p>
-                    <div class="slideshow-container">
+                    <div class="slideshow-container" id="final-design-sketches">
                         <div class="mySlides2">
-                            <img src="./Images/HomePageWireframe.png" style="width:100%">
+                            <a href="./Images/HomePageWireframe.png" target="_blank">
+                                <img src="./Images/HomePageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlides2">
-                            <img src="./Images/BlogPageWireframe.png" style="width:100%">
+                            <a href="./Images/BlogPageWireframe.png" target="_blank">
+                                <img src="./Images/BlogPageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlides2">
-                            <img src="./Images/DesignPageWireframe.png" style="width:100%">
+                            <a href="./Images/DesignPageWireframe.png" target="_blank">
+                                <img src="./Images/DesignPageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlides2">
-                            <img src="./Images/EssayPageWireframe.png" style="width:100%">
+                            <a href="./Images/EssayPageWireframe.png" target="_blank">
+                                <img src="./Images/EssayPageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlides2">
-                            <img src="./Images/ProfilePageWireframe.png" style="width:100%">
+                            <a href="./Images/PortfolioPageWireframe.png" target="_blank">
+                                <img src="./Images/ProfilePageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlides2">
-                            <img src="./Images/PortfolioPageWireframe.png" style="width:100%">
+                            <a href="./Images/ProfilePageWireframe.png" target="_blank">
+                                <img src="./Images/PortfolioPageWireframe.png" style="width:100%">
+                            </a>
                         </div>
                         <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides2(1)">&#10095;</a>
@@ -309,5 +343,6 @@
     </div>
     <button id="back-to-top-btn">Back to Top</button>
 <script src="functions.js"></script>
+<script src="path/to/lightbox.js"></script>
 </body>
 </html>

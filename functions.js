@@ -11,6 +11,9 @@ window.addEventListener("DOMContentLoaded", function() {
             // Get the target element
             var target = document.querySelector(this.getAttribute('href'));
 
+            // Calculate the offset to scroll slightly above the target
+            var offset = target.offsetTop - header.offsetHeight;
+
             // Scroll to the target element with a custom speed
             scrollToElement(target, 1000);  // 1000 ms = 1 second
         });
@@ -97,3 +100,18 @@ function showSlides2(n) {
     }
     slides[slideIndex2-1].classList.add('show');
 }
+
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+      header.style.top = '-150px'; // hides the header
+    } else {
+      header.style.top = '0'; // shows the header
+    }
+    lastScrollTop = scrollTop;
+  });
+  
+

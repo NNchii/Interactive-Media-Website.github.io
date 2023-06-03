@@ -15,27 +15,25 @@
     
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="Logo">
             <a href="index.html">
                 <img src="./Images/Weblogo.png" id="web-logo">
             </a>
-        </div>
-        <div class="ProfilePicture">
-            
-            <img src="./Images/ProfilePicture.png" id="profile-picture">
-            
-        </div>
+        </div>      
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="essay.html">Essay</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li class="navText"><a href="index.html">Home</a></li>
+                <li class="navText"><a href="blog.html">Blogs</a></li>
+                <li class="navText"><a href="design.html">Design</a></li>
+                <li class="navText"><a href="essay.html">Essay</a></li>
+                <li class="navText"><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
+    <div class="profile-picture-container">
+        <img src="./Images/ProfilePicture.png" id="profile-picture">
+    </div>  
     <div class="container">
         <h1 class="profile-title">My Profile</h1>
         <div class="design-description">Here you can check out my profile and my portfolio!</div>
@@ -75,5 +73,7 @@
                 </div>
         </div>
     </div>
+    <button id="back-to-top-btn">Back to Top</button>
+<script src="functions.js"></script>
 </body>
 </html>
