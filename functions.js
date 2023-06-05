@@ -116,7 +116,7 @@ window.addEventListener('scroll', function() {
   
   fetch('https://api.github.com/users/NNchii/repos', {
     headers: {
-      'Authorization': 'token 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'
+      'Authorization': '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'
     }
   })
     .then(response => response.json())
