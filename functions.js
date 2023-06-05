@@ -114,5 +114,25 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
   });
   
-
-
+  fetch('https://api.github.com/users/NNchii/repos', {
+    headers: {
+      'Authorization': 'token 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'
+    }
+  })
+    .then(response => response.json())
+    .then(data => {
+      const githubSection = document.getElementById('github-data');
+  
+      data.forEach(repo => {
+        const repoElement = document.createElement('div');
+        repoElement.innerHTML = `
+        
+          <p id="sub-section-title">${repo.name}</p id="sub-section-title">
+          <p>${repo.description}</p>
+          <a href="${repo.html_url}">View on GitHub</a>
+        `;
+  
+        githubSection.appendChild(repoElement);
+      });
+    });
+  

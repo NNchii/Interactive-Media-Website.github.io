@@ -3,18 +3,23 @@ body {
    background: linear-gradient(to bottom, #FFFFFF, #e3e3e3);
    font-family: 'Montserrat', sans-serif;
    margin: 0;
+   min-height: 100vh;
 }
 
- @media screen and (max-width: 1200px) {
-   /* Add your CSS styles for screens less than or equal to 1200px wide */
- }
- 
- 
+.no-scroll {
+   overflow: hidden;
+   height: 100%;
+}
+
  header {
     position: relative;
     height: 150px;
     background-color: #F0F0F0;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+
+ @media(max-width: 820px) {
+   
  }
 
  #web-logo{
@@ -81,7 +86,7 @@ body {
 
 .header-content {
     display: flex;
-    align-items: flex-end; /* Add this line to align both texts vertically */
+    align-items: flex-end;
 }
 
 .header-content h3 {
@@ -125,26 +130,26 @@ body {
 h1 {
     font-size: 32px;
     margin-bottom: 5px;
-    
+    animation: slideInFromLeft 1s forwards;
 }
 
 h2 {
     font-size: 100px;
     margin-left: 120px;
     margin-top: 0;
-    text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+    text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 h3 {
-    font-size: 32px; /* Set the same font size as h1 */
-    margin-left: 10px; /* Add some space between the texts */
-    position: relative; /* Add this line to enable relative positioning */
-    top: -65px; /* Add a negative value to move the text up */
+    font-size: 32px;
+    margin-left: 10px;
+    position: relative;
+    top: -65px;
 }
 
 .navText {
    position: sticky;
-   top: 0; /* Adjust this value as needed */
+   top: 0;
    transition: transform 0.3s ease-in-out;
 }
 
@@ -159,7 +164,8 @@ h3 {
     max-width: 1200px;
     padding: 0 30px;
     margin-top: 50px;
-    
+    animation: slideInFromLeft 1s forwards;
+    min-height: 100vh;
  }
  
  .main-section {
@@ -178,7 +184,7 @@ h3 {
    text-align: center;
    margin-bottom: 100px;
    margin-top: 100px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 .blog-description {
@@ -197,6 +203,7 @@ h3 {
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 100px;
+   animation: slideInFromBottom 1.5s forwards;
 }
 
 .week-title {
@@ -206,21 +213,22 @@ h3 {
    margin-bottom: 50px;
    margin-left: 0px;
    margin-right: 0px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 .week-title:last-child {
-   margin-bottom: 50px; /* Override margin-bottom for the last week-title */
+   margin-bottom: 50px;
 }
 
 .week-navigation {
    display: flex;
    justify-content: center;
-   margin-top: 90px;
-   margin-bottom:50px;
+   position: relative;
+   margin-top: 100px;
+   margin-bottom:0px;
    margin-left: 0px;
-   margin-right: 630px;
-   text-shadow: 1px 1px rgba(0,0,0,0.5); /* Add shadow effect */
+   margin-right: -200px;
+   text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 .week-navigation ul {
@@ -234,7 +242,6 @@ h3 {
 .week-navigation li {
    margin-left: 15px;
    font-size: 20px;
-   /*font-weight: bold;*/
 }
 
 .week-navigation a {
@@ -247,8 +254,8 @@ h3 {
    flex-basis: 100%;
    margin-left: 300px;
    margin-right: 0;
-   padding-bottom: 20px; /* Add some padding to create space between the text and the underline */
-   border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a faint underline */
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .blog-content {
@@ -271,7 +278,7 @@ h3 {
    text-align: center;
    margin-bottom: 100px;
    margin-top: 100px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 .design-description {
@@ -304,11 +311,11 @@ h3 {
    margin-bottom: 50px;
    margin-left: -110px;
    margin-right: 0px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 .design-title:last-child {
-   margin-bottom: 50px; /* Override margin-bottom for the last week-title */
+   margin-bottom: 50px;
 }
 
 .design-section-title {
@@ -318,19 +325,20 @@ h3 {
    margin-bottom: 50px;
    margin-left: 20px;
    margin-right: 0px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5);
 }
 
 .design-text {
    flex-basis: 100%;
    margin-left: 400px;
    margin-right: 0;
-   padding-bottom: 20px; /* Add some padding to create space between the text and the underline */
-   border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a faint underline */
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   animation: slideInFromBottom 1s forwards;
 }
 
 .ixd-title {
-   margin-bottom: 50px; /* Adjust as needed */
+   margin-bottom: 50px;
  } 
 
 .sub-navigation {
@@ -344,7 +352,7 @@ h3 {
  }
  
  .sub-navigation li {
-   margin-bottom: 10px; /* Adjust as needed */
+   margin-bottom: 10px;
    margin-left: 0;
    padding-left: 0;
  }
@@ -430,7 +438,7 @@ h3 {
    margin-left: -300px;
    margin-right:800px;
    margin-top: -100px;
-   padding-bottom: 20px; /* Add some padding to create space between the text and the underline */
+   padding-bottom: 20px;
 }
 
 .details-content-title{
@@ -444,7 +452,7 @@ h3 {
    margin-left: 650px;
    margin-right: -200px;
    margin-top: -320px;
-   padding-bottom: 20px; /* Add some padding to create space between the text and the underline */
+   padding-bottom: 20px; 
 }
 
 #details-text{
@@ -474,7 +482,7 @@ h3 {
    margin-bottom: 50px;
    margin-left: -110px;
    margin-right: 0px;
-   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); /* Add shadow effect */
+   text-shadow: 2.5px 2.5px rgba(0,0,0,0.5); 
 }
 
 #wireframes{
@@ -484,45 +492,44 @@ h3 {
 }
 
 #back-to-top-btn {
-   display: none; /* Hidden by default */
-   position: fixed; /* Fixed/sticky position */
-   bottom: 20px; /* Place the button at the bottom of the page */
-   right: 30px; /* Place the button 30px from the right */
-   z-index: 99; /* Make sure it does not overlap */
-   border: none; /* Remove border */
-   outline: none; /* Remove outline */
-   background-color: #000; /* Set a background color */
-   color: white; /* Text color */
-   cursor: pointer; /* Add a mouse pointer on hover */
-   padding: 10px; /* Some padding */
-   border-radius: 10px; /* Rounded corners */
-   font-size: 18px; /* Increase font size */
+   display: none; 
+   position: fixed; 
+   bottom: 20px; 
+   right: 20px; 
+   z-index: 99; 
+   border: none; 
+   outline: none; 
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: white; 
+   cursor: pointer; 
+   padding: 15px; 
+   border-radius: 4px; 
+   font-size: 18px; 
 }
 
 #back-to-top-btn:hover {
-   background-color: #555; /* Add a dark-grey background on hover */
+   background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .slideshow-container {
    max-width: 1000px;
    position: relative;
    margin: auto;
-   height: 500px; /* Adjust this value according to your needs */
+   height: 500px; 
  }
  .slideshow-container {
    max-width: 1000px;
    position: relative;
    margin: auto;
-   height: 500px; /* Adjust this value according to your needs */
+   height: 500px; 
 }
 
-/* Hide the images by default */
 .mySlides1, .mySlides2 {
    position: absolute;
    visibility: hidden;
    opacity: 0;
    width: 100%;
-   height: 500px; /* adjust this value as needed */
+   height: 500px; 
    transition: opacity 1s linear, visibility 1s;
 }
  
@@ -537,7 +544,6 @@ h3 {
    opacity: 1;
 }
 
- /* Next & previous buttons */
 .prev, .next {
    cursor: pointer;
    position: absolute;
@@ -552,14 +558,12 @@ h3 {
    border-radius: 0 3px 3px 0;
    user-select: none;
 }
- 
- /* Position the "next button" to the right */
+
 .next {
    right: 0;
    border-radius: 3px 0 0 3px;
 }
- 
- /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
    background-color: rgba(0,0,0,0.8);
 }

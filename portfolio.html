@@ -17,11 +17,11 @@
 </head>
 <body>
     <header id="header">
-        <div class="Logo">
+        <img class="Logo">
             <a href="index.html">
                 <img src="./Images/Weblogo.png" id="web-logo">
             </a>
-        </div>
+        </img>
         <nav>
             <ul>
                 <li class="navText"><a href="index.html">Home</a></li>
@@ -33,52 +33,62 @@
         </nav>
     </header>
     <!-- Your header code here -->
-    <div class="container">
+    <main class="container">
         <h1 class="design-page-title">My Portfolio</h1>
-        <div class="design-description">Here contains my portfolio works.</div>
-        <div class="design-content">
-            <div class="design-entry">
+        <p class="design-description">Here contains my portfolio works.</p>
+        <section class="design-content">
+            <article class="design-entry">
                 <h2 class="essay-title">2D Twinstick<br>Shooter</br></h2>
-                <div class="design-text">
+                <article class="design-text">
                     <iframe src="2D shooter Web/2DShooter.html" style="width: 960px; height: 640px;"></iframe>
 
                     <p id="design-content-text">
                         Recommanded to play in fullscreen mode.
                     </p>
-                </div>
+                </article>
 
                 <h2 class="essay-title">Bitcoin<br>Clicker</br></h2>
-                <div class="design-text">
+                <article class="design-text">
                     <iframe src="CookieClicker/index.html" style="width: 960px; height: 640px;"></iframe>
 
                     <p id="design-content-text">
                         Recommanded to play in fullscreen mode.
                     </p>
-                </div>
+                </article>
 
                 <h2 class="essay-title">Turn Based<br>RPG</br></h2>
-                <div class="design-text">
+                <article class="design-text">
                     <iframe src="TurnBasedRPG/index.html" style="width: 960px; height: 640px;"></iframe>
 
                     <p id="design-content-text">
                         Recommanded to play in fullscreen mode.
                     </p>
-                </div>
+                </article>
 
                 <h2 class="essay-title">Turn Based<br>RPG</br></h2>
-                <div class="design-text">
+                <article class="design-text">
                     <iframe src="Billiard/index.html" style="width: 960px; height: 640px;"></iframe>
 
                     <p id="design-content-text">
                         Recommanded to play in fullscreen mode.
                     </p>
-                </div>
-            </div>
+                </article>
+
+                <h2 class="essay-title">GitHub<br>API</br></h2>
+                <article class="design-text">
+                    <section id="github-data">
+                        <p id="section-title"><strong>Additional GitHub Projects:</strong></p>
+                        <!-- GitHub data will go here -->
+                    </section>
+                </article>
+                
+            </article>
             <!-- Other blog content (e.g., Week 2, Week 3) -->
-        </div>
-    </div>
-    <button id="back-to-top-btn">Back to Top</button>
+        </section>
+    </main>
+    <button id="back-to-top-btn">&#8679;</button>
     <script src="2D shooter Web/2D Shooter Web.loader.js"></script>
     <script src="functions.js"></script>
+    
 </body>
 </html>
