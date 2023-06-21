@@ -23,11 +23,11 @@
         </img>
         <nav>
             <ul>
-                <li class="navText"><a href="index.html">Home</a></li>
-                <li class="navText"><a href="blog.html">Blogs</a></li>
-                <li class="navText"><a href="design.html">Design</a></li>
-                <li class="navText"><a href="essay.html">Essay</a></li>
-                <li class="navText"><a href="profile.html">Profile</a></li>
+                <li class="navText" onclick="navigateTo('index.html')">Home</li>
+                <li class="navText" onclick="navigateTo('blog.html')">Blogs</li>
+                <li class="navText" onclick="navigateTo('design.html')">Design</li>
+                <li class="navText" onclick="navigateTo('essay.html')">Essay</li>
+                <li class="navText" onclick="navigateTo('profile.html')">Profile</li>
             </ul>
         </nav>
     </header>
@@ -37,17 +37,17 @@
         <p class="blog-description">Welcome to my web design process blogs!</p>
         <nav class="week-navigation">
             <ul>
-                <li class="navText"><a href="#week1">Week 1</a></li>
-                <li class="navText"><a href="#week2">Week 2</a></li>
-                <li class="navText"><a href="#week3">Week 3</a></li>
-                <li class="navText"><a href="#week4">Week 4</a></li>
-                <li class="navText"><a href="#week7">Week 7</a></li>
-                <li class="navText"><a href="#week8">Week 8</a></li>
-                <li class="navText"><a href="#week9">Week 9</a></li>
-                <li class="navText"><a href="#week10">Week 10</a></li>
-                <li class="navText"><a href="#week11">Week 11</a></li>
-                <li class="navText"><a href="#week12">Week 12</a></li>
-                <li class="navText"><a href="#week13">Week 13</a></li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week1'), 1000)">Week 1</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week2'), 1000)">Week 2</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week3'), 1000)">Week 3</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week4'), 1000)">Week 4</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week7'), 1000)">Week 7</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week8'), 1000)">Week 8</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week9'), 1000)">Week 9</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week10'), 1000)">Week 10</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week11'), 1000)">Week 11</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week12'), 1000)">Week 12</li>
+                <li class="navText" onclick="scrollToElement(document.getElementById('week13'), 1000)">Week 13</li>
             </ul>
         </nav>
         <section class="blog-content">
@@ -347,6 +347,22 @@
             <!-- Other blog content (e.g., Week 2, Week 3) -->
         </section>
     </main>
+    <footer>
+        <div class="vcard">
+            <a class="url fn n" href="http://www.example.com">
+                <span class="given-name">Lucien</span>
+                <span class="family-name">Zhang</span>
+            </a>
+            <div class="org">University of Wits Watersrand.</div>
+            <div class="adr">
+                <span class="locality">Johannesburg</span>,
+                <span class="region">Gauteng</span>,
+                <span class="country-name">South Africa</span>
+            </div>
+            <div class="tel">082-964-4750</div>
+            <a class="email" href="mailto:2466437@students.wits.ac.za">2466437@students.wits.ac.za</a>
+        </div>
+    </footer>
     <button id="back-to-top-btn">&#8679;</button>
 <script src="functions.js"></script>
 </body>

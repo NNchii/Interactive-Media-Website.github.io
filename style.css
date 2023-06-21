@@ -567,3 +567,15 @@ h3 {
 .prev:hover, .next:hover {
    background-color: rgba(0,0,0,0.8);
 }
+
+footer {
+   width: 100%;
+   border-top: 1px solid #ccc; /* This creates the faint line */
+   padding: 20px 0; /* This adds some space above and below the text */
+   background-color: #fff; /* This sets the background color of the footer */
+   color: #999; /* This sets the text color */
+   text-align: center; /* This centers the text horizontally */
+   font-size: 0.8em; /* This sets the text size */
+   position: relative;
+   bottom: 0;
+}
